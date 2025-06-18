@@ -1,1 +1,0 @@
-select 'weeep' from dual
