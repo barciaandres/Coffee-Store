@@ -1,0 +1,15 @@
+@import '../mixins/mixins';
+
+.destacados {
+    @include grid_layout(3, 10px);
+    max-width: fit-content;
+
+}
+
+.tienda {
+    @include grid_layout(3);
+}
+
+.galeria {
+    @include grid_layout(3);
+}

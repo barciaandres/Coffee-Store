@@ -1,0 +1,51 @@
+//Al final creo que así queda más complicado, debería haber hecho un _media para cada página
+
+@media (max-width: 1165px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 865px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1060px) {
+    .destacados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tienda {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 715px) {
+    .destacados {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tienda {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .contenedor .titulo {
+        font-size: 30px;
+    }
+
+    .destacados .producto img {
+        max-width: 150px;
+    }
+
+    .tienda .producto img {
+        max-width: 150px;
+    }
+
+    .galeria .item img {
+        max-width: 180px;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../mixins/mixins';
+
+.boton_tienda {
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8b6042;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    @include button_hover(1.05, #4A3B31, 0.3s);
+}

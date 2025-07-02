@@ -1,0 +1,35 @@
+@import '../mixins/mixins';
+
+.tienda {
+    .producto {
+        @include producto_item();
+
+        img {
+            @include zoom_img(1.15, 0.3s);
+            max-width: 300px;
+        }
+    }
+}
+
+.destacados {
+    .producto {
+        @include producto_item();
+
+        img {
+            @include zoom_img(1.05, 0.3s);
+            max-width: 300px;
+        }
+    }
+}
+
+.galeria {
+    .item {
+        @include producto_item();
+
+        img {
+            @include zoom_img(1.10, 0.3s);
+            max-width: 335px;
+            height: auto;
+        }
+    }
+}
