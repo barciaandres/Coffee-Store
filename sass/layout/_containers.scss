@@ -1,4 +1,4 @@
-@import '../base/variables';
+@use '../base/variables' as v;
 
 .fondo_paginas {
     background-color: #EFEBE9;
@@ -14,7 +14,7 @@
     .titulo {
         font-weight: 700;
         font-size: 40px;
-        color: $color_primario;
+        color: v.$color_primario;
     }
 
     .img-nosotros {

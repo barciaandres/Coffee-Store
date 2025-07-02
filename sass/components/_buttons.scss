@@ -1,5 +1,5 @@
-@import '../mixins/mixins';
-@import '../base/variables';
+@use '../mixins/mixins' as m;
+@use '../base/variables' as v;
 
 .boton_tienda {
 
@@ -11,12 +11,12 @@
     text-decoration: none;
     color: #fff;
     //el botón está más claro
-    background-color: $color_secundario;
+    background-color: v.$color_secundario;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     //el botón se oscurece y toma el mismo color del sitio
-    @include button_hover(1.05, $color_primario, 0.3s);
+    @include m.button_hover(1.05, v.$color_primario, 0.3s);
 }
 
 @keyframes whatsapp-jump {
@@ -30,22 +30,22 @@
     }
 
     40% {
-        transform: translateY(-$whatsapp-jump-height); // Punto más alto del salto
+        transform: translateY(-(v.$whatsapp-jump-height)); // Punto más alto del salto
     }
 
     60% {
-        transform: translateY(-($whatsapp-jump-height * 0.5)); // A medio camino de vuelta
+        transform: translateY(-(v.$whatsapp-jump-height * 0.5)); // A medio camino de vuelta
     }
 }
 
 .whatsapp-float {
     position: fixed;
-    bottom: $whatsapp-margin;
-    right: $whatsapp-margin;
+    bottom: v.$whatsapp-margin;
+    right: v.$whatsapp-margin;
     z-index: 1000;
     display: block;
-    width: $whatsapp-size;
-    height: $whatsapp-size;
+    width: v.$whatsapp-size;
+    height: v.$whatsapp-size;
     border-radius: 50%;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -62,5 +62,5 @@
         animation: none;
     }
 
-    animation: whatsapp-jump $whatsapp-jump-duration ease-in-out infinite $whatsapp-jump-delay;
+    animation: whatsapp-jump v.$whatsapp-jump-duration ease-in-out infinite v.$whatsapp-jump-delay;
 }

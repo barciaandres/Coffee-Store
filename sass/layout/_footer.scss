@@ -1,7 +1,7 @@
-@import '../base/variables';
+@use '../base/variables' as v;
 
 footer {
-    background-color: $color_primario;
+    background-color: v.$color_primario;
     color: #EFEBE9;
     padding: 25px 20px;
     text-align: center;
