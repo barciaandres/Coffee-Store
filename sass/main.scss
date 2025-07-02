@@ -1,3 +1,4 @@
+@use 'base/variables';
 @use 'base/reset';
 @use 'layout/header';
 @use 'layout/footer';
@@ -6,5 +7,6 @@
 @use 'components/products'; // .producto e .item
 @use 'components/buttons';
 @use 'media/media';
+
 //problema con el use y el deprecated import, no sé si el import está ok así, o hay que usarlo de otra forma
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');

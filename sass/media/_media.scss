@@ -1,3 +1,4 @@
+@import '../base/variables';
 //Al final creo que así queda más complicado, debería haber hecho un _media para cada página
 
 @media (max-width: 1165px) {
@@ -47,5 +48,14 @@
 
     .galeria .item img {
         max-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: $whatsapp-size * 0.8;
+        height: $whatsapp-size * 0.8;
+        bottom: $whatsapp-margin * 0.8;
+        right: $whatsapp-margin * 0.8;
     }
 }
