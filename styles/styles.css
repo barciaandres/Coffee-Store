@@ -59,6 +59,11 @@ footer p {
   font-size: 40px;
   color: #4A3B31;
 }
+.contenedor .img-nosotros {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 5px;
+}
 
 .destacados {
   display: grid;
