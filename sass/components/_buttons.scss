@@ -11,12 +11,12 @@
     text-decoration: none;
     color: #fff;
     //el botón está más claro
-    background-color: v.$color_secundario;
+    background-color: v.$secondary_color;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     //el botón se oscurece y toma el mismo color del sitio
-    @include m.button_hover(1.05, v.$color_primario, 0.3s);
+    @include m.button_hover(1.05, v.$primary_color, 0.3s);
 }
 
 @keyframes whatsapp-jump {
@@ -26,21 +26,22 @@
     50%,
     80%,
     100% {
-        transform: translateY(0); // Posición inicial y final (abajo)
+        transform: translateY(0);
     }
 
     40% {
-        transform: translateY(-(v.$whatsapp-jump-height)); // Punto más alto del salto
+        transform: translateY(-(v.$whatsapp-jump-height));
     }
 
     60% {
-        transform: translateY(-(v.$whatsapp-jump-height * 0.5)); // A medio camino de vuelta
+        transform: translateY(-(v.$whatsapp-jump-height * 0.5));
     }
 }
 
 .whatsapp-float {
     position: fixed;
-    bottom: v.$whatsapp-margin;
+    // Se posiciona sobre el footer. El valor es la altura del footer + un margen.
+    bottom: v.$footer-height-approx + v.$whatsapp-margin;
     right: v.$whatsapp-margin;
     z-index: 1000;
     display: block;

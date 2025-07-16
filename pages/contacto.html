@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-coffee">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/favicon.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
                 Café del Bueno</a>
@@ -52,31 +52,35 @@
     <main>
         <section class="contenedor">
             <h1 class="titulo">Contáctanos</h1>
-            <h4>¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte!</h4>
-
-            <form>
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre">
+            <p class="subtitulo-contacto">¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte!</p>
+            <div class="contact-form-wrapper">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar mensaje</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email">
+                <div class="contact-info">
+                    <article>
+                        <h4>También puedes encontrarnos en:</h4>
+                        <p><strong>Dirección:</strong> Int. Barcia 175, Bell Ville, Córdoba</p>
+                        <p><strong>Teléfono:</strong> +54 123 456 7890</p>
+                        <p><strong>Email:</strong> info@cafedelbueno.com</p>
+                    </article>
                 </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-default">Enviar mensaje</button>
-            </form>
-
-            <article>
-                <h4>También puedes encontrarnos en:</h4>
-                <p><strong>Dirección:</strong> Int. Barcia 175, Bell Ville, Córdoba</p>
-                <p><strong>Teléfono:</strong> +54 123 456 7890</p>
-                <p><strong>Email:</strong> info@cafedelbueno.com</p>
-            </article>
-            <div class="embed-responsive embed-responsive-16by9">
+            </div>
+            <div class="map-container embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13441.445643496976!2d-62.70921462802827!3d-32.62319770718547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cbfb35d219a65f%3A0x1907d17892b33b3e!2sMolo-Caf%C3%A9!5e0!3m2!1ses!2sar!4v1751430247060!5m2!1ses!2sar"></iframe>
             </div>
@@ -90,7 +94,6 @@
                 <a href="https://facebook.com/andresbarcia" target="_blank" rel="noopener noreferrer"
                     aria-label="Síguenos en Facebook">
                     <img src="../assets/iconos/fb.webp" alt="Facebook">
-                </a>
                 </a>
                 <a href="https://instagram.com/andreselcolo" target="_blank" rel="noopener noreferrer"
                     aria-label="Síguenos en Instagram">

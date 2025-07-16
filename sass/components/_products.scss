@@ -1,12 +1,43 @@
 @use '../mixins/mixins' as m;
+@use '../base/variables' as v;
+
+
 
 .tienda {
     .producto {
         @include m.producto_item();
+        justify-content: flex-start;
 
         img {
-            @include m.zoom_img(1.15, 0.3s);
+            @include m.zoom_img(1.08, 0.3s);
             max-width: 300px;
+            margin-bottom: 1rem;
+        }
+
+        .producto-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            flex-grow: 1;
+
+            h4 {
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+                color: v.$primary_color;
+            }
+
+            .precio {
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: v.$secondary_color;
+            }
+
+            .boton_tienda {
+                margin-top: auto;
+            }
         }
     }
 }

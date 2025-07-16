@@ -1,4 +1,10 @@
+@use '../base/variables' as v;
+
 header {
-    background-color: #4A3B31;
+    background-color: v.$primary_color;
     font-family: 'Roboto', sans-serif;
+
+    .bg-coffee {
+        background-color: v.$primary_color;
+    }
 }

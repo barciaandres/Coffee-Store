@@ -1,0 +1,94 @@
+@use '../base/variables' as v;
+@use '../mixins/mixins' as m;
+
+.subtitulo-contacto {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contact-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    flex: 1 1 450px;
+    max-width: 550px;
+    text-align: left;
+
+    .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: v.$primary_color;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+            &:focus {
+                outline: none;
+                border-color: v.$secondary_color;
+                box-shadow: 0 0 0 3px rgba(v.$secondary_color, 0.2);
+            }
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+    }
+
+    .btn-submit {
+        @include m.button_hover(1.05, v.$primary_color, 0.3s);
+        display: block;
+        width: 100%;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: v.$secondary_color;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.contact-info {
+    flex: 1 1 350px;
+    max-width: 400px;
+    text-align: left;
+    padding: 2rem 1rem;
+
+    h4 {
+        color: v.$primary_color;
+        margin-bottom: 1rem;
+    }
+}
+
+.map-container {
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
