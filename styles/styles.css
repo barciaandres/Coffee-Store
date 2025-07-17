@@ -8,7 +8,6 @@
 body {
   font-family: "Roboto", sans-serif;
   padding-top: 56px;
-  padding-bottom: 110px;
   background-image: url("/assets/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -23,10 +22,6 @@ header .bg-coffee {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 100;
   background-color: #4A3B31;
   color: #EFEBE9;
   padding: 15px 20px;
