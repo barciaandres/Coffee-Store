@@ -12,7 +12,5 @@ body {
     padding-bottom: v.$footer-height-approx + 20px; // Espacio para el footer fijo
     background-image: url("/assets/bg.jpg");
     background-size: cover;
-    background-position: center;
-
-
+    background-attachment: fixed;
 }
